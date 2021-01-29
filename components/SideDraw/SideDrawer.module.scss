@@ -1,0 +1,64 @@
+.SideDrawer {
+    position: absolute;
+    max-width: 70%;
+    height: 100vh;
+    max-height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    padding: 0rem 4rem;
+    box-sizing: content-box;
+    transition: transform 0.3s ease-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .Nav {
+      margin-top: 16rem;
+      color: #f9faf4;
+      font: 800 8rem/1 'moret', sans-serif;
+      
+      * {
+        padding-bottom: 3rem;
+      }
+
+      @media (max-width: 620px) {
+        font-size: 20rem;
+        padding: 0rem 6rem;
+      }
+    }
+
+    .Footer {
+      padding: 1rem 0;
+      font: 800 4rem/1 'moret', sans-serif;
+
+      * {
+        display: inline-block;
+        margin-left: 4rem;
+        line-height: 6rem;
+      }
+
+      *:nth-child(1) {
+        margin-left: 0;
+      }
+
+      @media (max-width: 620px) {
+        padding: 10rem 0;
+        font-size: 10rem;
+
+        * {
+          display: inline-block;
+          margin-left: 10rem;
+        }
+      }
+    }
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(-100vw);
+}

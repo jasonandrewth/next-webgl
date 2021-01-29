@@ -1,0 +1,21 @@
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: opacity 0.3s ease-out;
+}
+
+.Open {
+    opacity: 1;
+    cursor: crosshair;
+  }
+  
+.Close {
+    opacity: 0;
+    pointer-events: none;
+}

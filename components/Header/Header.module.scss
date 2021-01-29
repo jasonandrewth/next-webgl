@@ -1,0 +1,30 @@
+.demo1header {
+
+    left: 0;
+    opacity: 1;
+    padding: 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    z-index: 999999999;
+  
+    .loaded & {
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    @media (max-width: 620px) {
+      padding: 8rem;
+    }
+    
+  }
+  
+  .demo1title {
+    color: #f9faf4;
+    font: 800 8rem/1 'moret', sans-serif;
+
+    @media (max-width: 620px) {
+      font-size: 20rem;
+    }
+  }
