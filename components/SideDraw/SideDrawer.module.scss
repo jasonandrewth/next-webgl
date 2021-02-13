@@ -24,8 +24,9 @@
       }
 
       @media (max-width: 620px) {
-        font-size: 20rem;
+        font-size: 16rem;
         padding: 0rem 6rem;
+        margin-top: 32rem;
       }
     }
 
@@ -36,7 +37,7 @@
       * {
         display: inline-block;
         margin-left: 4rem;
-        line-height: 6rem;
+        line-height: unset;
       }
 
       *:nth-child(1) {
@@ -50,6 +51,7 @@
         * {
           display: inline-block;
           margin-left: 10rem;
+          line-height: unset;
         }
       }
     }
